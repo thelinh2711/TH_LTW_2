@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const videoPlayer = document.getElementById('video-player');
     const closeBtn = document.getElementById('close-btn');
     const trailerBtns = document.querySelectorAll('.trailer-btn');
-
+    const loginButton = document.querySelector('.login-btn');
+    const signupButton = document.querySelector('.signup-btn');
     trailerBtns.forEach(btn => {
         btn.addEventListener('click', function () {
             const videoSrc = this.dataset.video;
@@ -22,5 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.style.display = 'none';
             videoPlayer.pause();
         }
+    });
+    loginButton.addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+
+    signupButton.addEventListener('click', function() {
+        window.location.href = 'register.html';
     });
 });
