@@ -1,4 +1,5 @@
-/* Reset CSS */
+
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +39,9 @@ nav a {
     padding-left: 20px;
     padding-right: 20px;
 }
-
+.button-group button {
+    margin: 0 10px; /* Để tạo khoảng cách giữa nút */
+}
 .login-btn {
     padding: 10px 20px;
     background-color: #e50914;
@@ -47,7 +50,14 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
 }
-
+.sigup-btn {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .movie-list {
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +154,7 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     color: #e50914;
-    text-align: left; /* Căn lề bên trái */
+    text-align: left; 
     margin-top: 20px;
     margin-bottom: 0px;
     margin-left: 180px;
@@ -159,14 +169,14 @@ footer {
 .footer-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px; /* Khoảng cách giữa các cột */
+    gap: 10px; 
 }
 
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    text-align: left; /* Căn lề trái */
-    display: block; /* Để liên kết chiếm toàn bộ chiều rộng của ô */
+    text-align: left;
+    display: block; 
 }
 
 .footer-links a:hover {
